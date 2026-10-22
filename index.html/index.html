@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THREE.JS</title>
+    <link rel="stylesheet" href="style.css">
     <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unkpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
-            }
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
         }
+    }
+    </script>
 </head>
 <body>
-<button id="startButton">Start</button> TAP + EAT </button>
-<script type="module">
-    import * as THREE from 'three';
-   
-</script>
-<script src="script.js"
+    <button id="start">TAP + EAT</button>
+    <p id="msg"></p>
+
+    <!-- type="module" so script.js can import three -->
+    <script type="module" src="script.js"></script>
 </body>
 </html>
